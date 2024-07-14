@@ -11435,3 +11435,12 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+/* הוספת מחלקת CSS בקובץ styles.css או בתוך תגית <style> */
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.visible {
+  opacity: 1;
+}

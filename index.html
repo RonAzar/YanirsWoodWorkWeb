@@ -55,7 +55,7 @@
       }
     </style>
   </head>
-  <body id="page-top">
+  <body id="page-top" class="hidden">
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
@@ -839,5 +839,11 @@ style="
     <script src="js/scripts.js"></script>
     <!-- SB Forms JS-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        document.body.classList.remove('hidden');
+        document.body.classList.add('visible');
+      });
+    </script>
   </body>
 </html>
