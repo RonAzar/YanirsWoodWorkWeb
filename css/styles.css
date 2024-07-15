@@ -11444,3 +11444,25 @@ html {
 .visible {
   opacity: 1;
 }
+
+.masthead-heading,
+.masthead-subheading {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  color: #4b3621; /* צבע חום עץ כהה */
+}
+
+/* הוספת הסגנון הזה להקטנת ה-padding של ה-navbar */
+#mainNav {
+  padding: 0.5rem 0; /* עדכון ה-padding */
+}
+
+.hidden-keywords {
+  font-size: 0;
+  color: transparent;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+}
