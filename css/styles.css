@@ -11469,6 +11469,7 @@ html {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~; */
 /* מעטפת אנימציית טעינה */
+/* Loader Wrapper */
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -11480,7 +11481,7 @@ html {
   background-color: #ffffff;
 }
 
-/* אנימציית טעינה */
+/* Loader */
 #loader {
   display: block;
   position: absolute;
@@ -11497,24 +11498,16 @@ html {
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/* חלקים של מעטפת האנימציה */
+/* Loader Sections */
 .loader-section {
   position: fixed;
   top: 0;
