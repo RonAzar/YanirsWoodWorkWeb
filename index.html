@@ -64,6 +64,11 @@
     </style>
   </head>
   <body id="page-top" class="hidden">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
@@ -881,10 +886,18 @@
     <script src="js/scripts.js"></script>
     <!-- SB Forms JS-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- <script>
+      window.addEventListener("load", function () {
+        document.body.classList.remove("hidden");
+        document.body.classList.add("visible");
+      });
+    </script> -->
     <script>
       window.addEventListener("load", function () {
         document.body.classList.remove("hidden");
         document.body.classList.add("visible");
+        const loaderWrapper = document.getElementById("loader-wrapper");
+        loaderWrapper.style.display = "none";
       });
     </script>
   </body>
